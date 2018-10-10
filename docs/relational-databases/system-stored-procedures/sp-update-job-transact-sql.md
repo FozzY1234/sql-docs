@@ -55,12 +55,12 @@ sp_update_job [ @job_id =] job_id | [@job_name =] 'job_name'
  The identification number of the job to be updated. *job_id*is **uniqueidentifier**.  
   
  [ **@job_name =**] **'***job_name***'**  
- The name of the job. *job_name*is **nvarchar(128)**.  
+ The name of the job. *job_name* is **nvarchar(128)**.  
   
 > **NOTE:** Either *job_id* or *job_name* must be specified but both cannot be specified.  
   
  [ **@new_name =**] **'***new_name***'**  
- The new name for the job. *new_name*is **nvarchar(128)**.  
+ The new name for the job. *new_name* is **nvarchar(128)**.  
   
  [ **@enabled =**] *enabled*  
  Specifies whether the job is enabled (**1**) or not enabled (**0**). *enabled*is **tinyint**.  
@@ -72,7 +72,7 @@ sp_update_job [ @job_id =] job_id | [@job_name =] 'job_name'
  The identification number of the first step to execute for the job. *step_id*is **int**.  
   
  [ **@category_name =**] **'***category***'**  
- The category of the job. *category*is **nvarchar(128)**.  
+ The category of the job. *category* is **nvarchar(128)**.  
   
  [ **@owner_login_name =**] **'***login***'**  
  The name of the login that owns the job. *login*is **nvarchar(128)** Only members of the **sysadmin** fixed server role can change job ownership.  
